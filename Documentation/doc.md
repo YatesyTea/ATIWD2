@@ -42,7 +42,7 @@ CSS3:
 
 This image of the html spec was as of 2013
 
-![related_tech](C:\Uni\ATIWD2\Documentation\doc.resources\related_tech.png)
+![related_tech](doc.resources\related_tech.png)
 
 Image sourced from Sergey's HTML5 & CSS3 Quick Reference: HTML5, CSS3 and APIs (3rd Edition)
 S. Mavrody (2012), Sergey's HTML5 & CSS3 Quick Reference: HTML5, CSS3 and APIs (3rd Edition), Belisso.
