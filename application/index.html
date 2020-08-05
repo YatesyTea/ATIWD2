@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  
+  <script type="text/javascript">
+    function submit()  {
+      let resultTotal = 0;
+      resultTotal += document.querySelector('input[name = "question1":checked').value;
+      resultTotal += document.querySelector('input[name = "question2":checked').value;
+      resultTotal += document.querySelector('input[name = "question3":checked').value;
+      resultTotal += document.querySelector('input[name = "question4":checked').value;
+      alert("This is the total: " + resultTotal);
+    }
+
+  </script>
+
+  <title>YatesyTea Home</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="box header">
+      <img src="resources/yatesyicon.png" alt="YatesyTeaIcon" id="icon">
+    </div>
+
+    <div class="box sidebar">
+      <h1>Sidebar</h1>
+      <div class="links">
+        <div><a href="index.html">Home</a></div>
+        <div><a href="about.html">About This App</a></div>
+      </div>
+    </div>
+
+    <div class="box content">
+      <section id="first">
+        <h1>Home</h1>
+        <p>The following test will ask you a few questions, and then
+          as a result recommend a tea to you, linking to the whittards
+          tea shop.</p>
+      </section>
+      
+      <section id="question1">
+        <h1>Question 1:</h1>
+        <h3>What time do you drink your tea?</h3>
+          <input id='rd1_0' name="question1" type="radio", value="0">Morning</input></br>    
+          <input id='rd1_1' name = "question1" type="radio", value="1">Noon</input></br>
+          <input id='rd1_2' name = "question1" type="radio", value="2">Afternoon</input></br>
+          <input id='rd1_3' name = "question1" type="radio", value="3">Evening</input></br></br>
+      </section>
+
+      <section id="question2">
+        <h1>Question 2:</h1>
+        <h3>Which of these flowers do you like most?</h3>
+        <input id='rd2_0' name="question2" type="radio", value="0">Camelia</input></br>    
+        <input id='rd2_1' name = "question2" type="radio", value="1">Rose</input></br>
+        <input id='rd2_2' name = "question2" type="radio", value="2">Daffodil</input></br>
+        <input id='rd2_3' name = "question2" type="radio", value="3">Hibiscus</input></br></br>
+      </section>
+
+      <section id="question3">
+        <h1>Question 3:</h1>
+        <h3>On a scale of 1-4 how much do you like Britain as a concept?</h3>
+        <input id='rd3_0' name="question3" type="radio", value="0">1</input></br>    
+        <input id='rd3_1' name = "question3" type="radio", value="1">2</input></br>
+        <input id='rd3_2' name = "question3" type="radio", value="2">3</input></br>
+        <input id='rd3_3' name = "question3" type="radio", value="3">4</input></br></br>
+      </section>
+
+      <section id="question4">
+        <h1>Question 4:</h1>
+        <h3>Why do you drink tea?</h3>
+        <input id='rd4_0' name="question4" type="radio", value="0">Leisure</input></br>    
+        <input id='rd4_1' name = "question4" type="radio", value="1">Refreshment</input></br>
+        <input id='rd4_2' name = "question4" type="radio", value="2">Caffiene</input></br>
+        <input id='rd4_3' name = "question4" type="radio", value="3">All of the above</input></br></br>
+      </section>
+
+      <section id="submit">
+        </br>
+        </br>
+        <button id='bt5' onclick="submit()">Find out your tea!</button>
+      </section>
+
+      <section id="result">
+        <h1 id="resultTitle">Your Tea Reccomendation</h1>
+        <a id="ans1" href="https://www.whittard.co.uk/tea/tea-type/black-tea/earl-grey-loose-tea-MSTR314583.html">Earl Grey</a>
+        <a id="ans2" href="https://www.whittard.co.uk/tea/tea-type/green-tea/sencha-loose-tea-MSTR315077.html">Sencha</a>
+        <a id="ans3" href="https://www.whittard.co.uk/tea/how-do-you-brew/loose-tea/strawberry-serenade-loose-tea-MSTR315440.html">Strawberry Serenade</a>
+        <a id="ans4" href="https://www.whittard.co.uk/tea/tea-type/black-tea/spice-imperial-loose-tea-MSTR314617.html">Spice Impreial</a>
+        <a id="ans5" href="https://www.whittard.co.uk/tea/matcha-guricha-loose-tea-MSTR327254.html">Matcha</a>
+      </section>
+
+      
+    </div>
+
+  </div>
+</body>
+
+</html>
