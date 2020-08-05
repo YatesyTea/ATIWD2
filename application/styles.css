@@ -1,0 +1,65 @@
+/*
+    Color Schema
+    Primary:    #3e444e
+    Secondary:  #7d8691
+    Tertiary:   #c3b9b0
+    Accent:     #fea700
+    Extra:      #9c4900
+*/
+body {
+    background-color: #3e444e;
+    font-family: Krona One, Arial;
+    margin: 40px;
+  }
+
+  .sidebar {
+    grid-area: sidebar;
+  }
+
+  .content {
+    grid-area: content;
+  }
+
+  .header {
+    grid-area: header;
+  }
+
+
+  .wrapper {
+    width: 100%;
+    display: grid;
+    grid-gap: 1%;
+    grid-template-columns: 20% 40% 40%;
+    grid-template-areas:
+    "header header  header"
+    "sidebar content content";
+    background-color: #3e444e;
+    color: #7d8961;
+  }
+
+  .box {
+  background-color: #3e444e;
+  color: #7d8961;
+  border-radius: 5px; 
+  font-size: 100%;
+  }
+
+  .header {
+  background-color: #c3b9b0;
+  }
+
+
+  h1,h2,h3 {
+    text-align: left;
+    color: #fea700;
+  }
+
+  a {
+    color: #fea700;
+    font-size: 1.3em;
+  }
+  
+  #icon {
+    align-content: left;
+    height: 8em;
+  }
